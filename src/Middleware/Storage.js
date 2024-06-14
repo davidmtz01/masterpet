@@ -2,7 +2,7 @@ import multer from "multer"
 
 const guardar = multer.diskStorage({
     destination: (req,file,cb) =>{
-        cb(null, path.join(__dirname, 'public', 'uploads'));
+        cb(null,'./public/uploads')
     },
     filename: (req,file,cb) =>{
         if(file !== null){
