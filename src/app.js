@@ -9,6 +9,8 @@ import path from 'path';
 //const conexion = 'mongodb://'+DB_HOST+':'+DB_PORT+'/'+DB_DATABASE
 mongoose.connect(URL).then()
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const app = express();
 app.use(cors());
 app.use(morgan('dev'));
