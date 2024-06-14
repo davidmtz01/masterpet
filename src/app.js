@@ -4,6 +4,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import {URL,DB_HOST,DB_DATABASE,DB_PORT} from './config.js'
 import rutasPerro from './Routes/Perro.routes.js'
+import path from 'path';
 //import rutasAuth from './Routes/Auth.routes.js'
 //const conexion = 'mongodb://'+DB_HOST+':'+DB_PORT+'/'+DB_DATABASE
 mongoose.connect(URL).then()
